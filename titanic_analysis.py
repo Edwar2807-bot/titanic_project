@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
-df = pd.read_csv('data/train.csv')
+df = pd.read_csv('Data/train.csv')
 df = df.dropna(subset=['Age', 'Sex', 'Survived'])
 df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
 
